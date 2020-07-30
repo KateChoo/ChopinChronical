@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
   } */
-.tab input {
+  .tab input {
     position:absolute;
     left: 0;
     top: 0;
@@ -12,24 +12,22 @@
   /*we will be using an input label to toggle the radio button, so we we click on the label*/
   
   .tab label {
-    background:;
+    /* background:;
     color:;
+    line-height:; */
     display: block;
     font-weight: bold;
-    line-height:;
     transition: letter-spacing .55s;
   }
   span{
     font-size: 1.5em;
   }
-  a{
-    text-decoration:none;
-  }
+
   .tab span:after{
     opacity: 0;
   }
-  /*沒用誒*/
-  /*what is this focus anf label*/
+  
+  /*what is this focus and label*/
   .tab input:focus + label, 
   .tab label:hover,
   .tab:hover span:after {
@@ -42,9 +40,12 @@
   
   /*****/
   .tab-content {
-    max-height:0;  /*****/
+    max-height:0;  /***把下面的內容藏起來***/
     overflow:hidden; /*****/
     transition: all .35s;
+    /*試試看*/
+/*     background: firebrick; 
+    border-radius: 5px; */
   }
   .tab-content h2,
   .tab-content p {
@@ -82,18 +83,23 @@
   
   /* Set a background color */
   body {
-    background-color: #474e5d;
+    background-color: #FFF;
+/*  #FFF5EE #474e5d */
     font-family: Helvetica, sans-serif;
   }
   h1{
       z-index: 999;
   }
-  h1, footer, a{
+  h1, footer, a, p{
     text-align: center;
     margin: 1em auto;
-    color: #FFF5EE;
+    color: #474e5d;
+    text-decoration:none;
   }
-  
+/* p{
+  color: #FFF5EE;
+} */
+
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
@@ -119,6 +125,8 @@
     position: relative;/*indifference*/
     background-color: inherit;/*indifference*/
     width: 50%;/*indifference*/
+     /*試試看*/
+/*     background: firebrick; */
   }
   
   /* The circles on the timeline */
@@ -128,7 +136,8 @@
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: #FFF5EE;
+    background-color: #FFF;
+/*     #FFF5EE */
     border: 4px solid firebrick;
   /*   #FF9F55 */
     top: 15px;
@@ -157,7 +166,7 @@
     right: 30px;
     border: medium solid #FFF5EE;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent firebrick;
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -169,9 +178,10 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #FFF5EE;
+    border: medium solid firebrick;
+/*     #FFF5EE */
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent firebrick transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -182,9 +192,12 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: #FFF5EE;
+    background-color: #FFF;
+/*     #FFF5EE */
     position: relative;
     border-radius: 6px;
+    /*試試看*/
+    border: 1px solid firebrick; 
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
